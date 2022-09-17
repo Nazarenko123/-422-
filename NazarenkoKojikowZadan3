@@ -1,0 +1,13 @@
+#Задание 3
+n=int(input())
+a=[0,1,2]
+f1=1
+f2=1
+for i in range(2, n+1):
+  f1, f2=f2, f1+f2
+  a.append(f2)
+
+if n in a:
+  print(‘Число Фибоначчи’)
+else:
+  print(‘Не число Фибоначчи’)
