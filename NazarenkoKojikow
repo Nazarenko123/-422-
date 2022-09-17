@@ -1,0 +1,41 @@
+#Задание 1
+#число
+a=int(input())
+for i in range(0,a+1):
+  print(i, end=‘ ‘)
+
+#слово
+a=str(input())
+if len(a)>5:
+  print(‘Первые 3 символа слова: ‘, a[0], a[1], a[2])
+  print(‘Последние 3 символа слова: ‘, a[-3], a[-2], a[-1])
+else:
+  print(a[0]*len(a))
+
+#строка
+a=str(input())
+s=0
+s1=0
+s2=0
+for i in range(0, len(a)):
+   if a[i] == ‘a’:
+    s+=1
+  elif a[i]==‘b’:
+    s1+=1
+  elif a[i] == ‘c’:
+    s2+=1
+print(‘Буква а в строке встречается :’, s, ‘раз’)
+print(‘Буква b встречается в строке: ‘, s1, ‘раз’)
+print(‘Буква c встречается в строке: ‘, s2, ‘раз’)
+
+#кортеж
+a=tuple(input())
+print(‘Отсортированный кортеж: ‘, sorted(a))
+
+#список
+a=list(input())
+s=0
+for i in range(0, len(a)-1):
+  if a[i] == ‘a’ and a[i+1]==‘b’ and a[i+2]==‘b’:
+    s+=1
+print(‘Сочетание «abc” встретилось в списке: ‘, s, ‘раз’)
